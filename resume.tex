@@ -1,0 +1,217 @@
+%-------------------------
+% Resume 
+% Author : Sagnik
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small #1\vspace{-2pt}}
+
+\newcommand{\classesList}[4]{
+	\item\small{
+		{#1 #2 #3 #4 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textbf{\small #2} \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & \textbf{\small #2}\\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% Subheading list (like Experience sections)
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+
+% Bullet item list (like points under each role or project)
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+	\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	
+	%----------HEADING----------
+	\begin{center}
+		{\Huge \scshape Sagnik Das} \\ \vspace{1em} 
+		\small \raisebox{-0.1\height}\faPhone\ 9233110188 ~ \href{mailto:sagnikdas5432@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{sagnikdas5432@gmail.com}} ~ 
+		\href{https://www.linkedin.com/in/sagnik-das-b550ab224/}{\raisebox{-0.2\height}\faLinkedin\ \underline{sagnik-das-b550ab224}}  ~
+		\href{https://github.com/sagnik3788}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/sagnik3788}}
+		\vspace{-8pt}
+	\end{center}
+	
+	%-----------EDUCATION-----------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Indian Institute of Information Technology and Management, Gwalior}{July 2022 -- July 2027}
+	{Integrated M.Tech in Information Technology}{}
+	\resumeSubHeadingListEnd
+	
+	%------RELEVANT COURSEWORK-------
+	\section{Relevant Coursework}
+	\begin{multicols}{4}
+		\begin{itemize}[itemsep=-5pt, parsep=3pt]
+			\item Data Structures
+			\item Cloud Computing 
+			\item Algorithms Analysis
+			\item Database Management
+			\item Artificial Intelligence
+			\item Operating System
+			\item OOPS
+			\item Computer Architecture
+		\end{itemize}
+	\end{multicols}
+	\vspace*{2.0\multicolsep}
+	
+	%-----------EXPERIENCE-----------
+	\section{Experience}
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{\href{https://mentorship.lfx.linuxfoundation.org/project/ca6413f6-6f97-4e41-aad8-8d2bbe17251d}{LFX Mentee at PipeCD (CNCF)}}{June 2025 – Aug 2025}
+	{Internship}{Tokyo/Remote}
+	\resumeItemListStart
+	\resumeItem{Contributed to CNCF’s \textbf{PipeCD}, helping automate and manage \textbf{2,000+} production deployments for companies like	CyberAgent, saving \textbf{500+} engineer-hours/month.}
+	\resumeItem{Built a standalone  \textbf{OpenTofu gRPC plugin} fully developed in  \textbf{Go} using GitOps practices, plus a 3-level config system to deploy   \textbf{100+} microservices across multi-cloud, cutting manual IaC effort by \textbf{50\%}.}
+	\resumeItem{Implemented SDK-driven automation,  \textbf{plan previews},  \textbf{drift detection}, and  \textbf{auto-rollback}, cutting infra misconfigs by  \textbf{30\%} and cloud costs by  \textbf{20–30\%}.}
+	\resumeItemListEnd
+	
+	
+	
+	\resumeSubHeadingListEnd
+	
+	
+	
+	\vspace{-16pt}
+	
+	
+	%-----------PROJECTS-----------
+	\section{Projects}
+	\resumeSubHeadingListStart
+	
+	\resumeProjectHeading
+	{\textbf{\href{}{dappergo}} $|$ \emph{Go, gRPC, protobuf}}{Jan 2024 -- Feb 2024}
+	\resumeItemListStart
+   \resumeItem{Built a lightweight distributed tracing library \textbf{inspired by Google's Dapper} in Go for observing and debugging microservices.}
+   \resumeItem{Implemented a \textbf{gRPC-based span collection} system with buffered channel architecture, processing \textbf{10,000+} spans per second without blocking main threads.}
+   \resumeItem{Designed context-based trace propagation flowing across \textbf{15+} service boundaries with \textbf{zero} context loss and \textbf{100\%} accurate dependency mapping.}
+   \resumeItem{Developed probabilistic sampling reducing overhead by \textbf{80\%} while capturing statistically representative traces with \textbf{<5ms} latency.}
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\textbf{\href{https://github.com/sagnik3788/FlowCD}{FlowCD}} $|$ \emph{Go, Kubernetes API, Git}}{March 2025 -- April 2025}
+	\resumeItemListStart
+	\resumeItem{Built a lightweight \textbf{GitOps controller} inspired by \textbf{ArgoCD} to automate deployment of \textbf{50+} applications across Kubernetes clusters.}
+	\resumeItem{Implemented periodic sync logic to monitor a \textbf{Git repository} for changes and auto-apply updated \textbf{Kubernetes manifests}, ensuring state drift is minimized by \textbf{100\%} within the cluster.}
+	\resumeItem{Deployed and tested the controller on a local \textbf{K3s} cluster, achieving \textbf{90\%} faster rollout compared to manual kubectl workflows.}
+	\resumeItem{Leveraged \textbf{Go}, native \textbf{Kubernetes API} calls, and Git webhooks for declarative and efficient infrastructure management.}
+	\resumeItemListEnd
+	
+	
+	% Remove or adjust any additional \vspace commands here if needed
+	
+	\resumeSubHeadingListEnd 
+	
+	%-----------TECHNICAL SKILLS-----------
+	% \section{Technical Skills}
+	% \begin{itemize}[leftmargin=0.15in, label={}]
+		%   \item \small{ \textbf{ML/AI:} PyTorch, Flower, Federated Learning, Transfer Learning }
+		%   \item \small{ \textbf{DevOps/Systems:} Docker, Terraform, Argo CD, Kubernetes, Prometheus, Grafana, GitHub Actions, FastAPI }
+		%   \item \small{ \textbf{Languages:} Python, Golang }
+		% \end{itemize}
+	% \vspace{-16pt}
+	
+	
+	\section{Technical Skills}
+	\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-1pt ]
+		\item \small{ \textbf{ML/AI:} PyTorch , Flower, Federated Learning , Transfer Learning }
+		\item \small{ \textbf{DevOps/Systems:} Docker, Terraform (managed multi-cloud infra with \textbf{50+ resources}), Argo CD, Kubernetes (orchestrated \textbf{100+} pods), Prometheus, Grafana, GitHub Actions, FastAPI }
+		\item \small{ \textbf{Languages:} Python (10+ automation projects), Golang (GitOps controllers, plugins) }
+	\end{itemize}
+	
+	
+	
+	%-----------CERTIFICATIONS-----------
+	\section{Certifications \& Achievements}
+	\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-1pt ]
+		\item Delivered \textbf{3+ production-grade products} solo for clients in Kuwait and UK  (tech stack: MVC .NET, Azure).
+		\item Ranked in the \textbf{Top 3 teams} out of 200+ participants at \textbf{TechMinds Hackathon} at IITM.
+		\item Won \textbf{HackByte Hackathon} at IIITDM Jabalpur - Best API Design track among 50+ teams.
+		\item Certified \textbf{Postman Student Expert} - designed and tested 20+ robust APIs.
+	\end{itemize}
+	
+	
+	%-------------------------------------------
+\end{document}

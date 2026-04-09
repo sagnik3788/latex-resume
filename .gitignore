@@ -1,0 +1,24 @@
+# Ignore compiled LaTeX files
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+
+
+# Ignore temporary and backup files
+*.bak
+*.swp
+*.synctex(busy)
+*~
